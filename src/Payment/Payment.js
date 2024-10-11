@@ -26,7 +26,7 @@ function Payment() {
     useEffect(() => {
         // generate the special stripe secret which allows us to charge a customer
         const getClientSecret = async () => {
-            const response = await fetch("http://100.24.57.113:8282/payment", {
+            const response = await fetch("https://apni-dukaan-backend-aupq.onrender.com/payment", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
